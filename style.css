@@ -23,7 +23,7 @@ body {
   background: linear-gradient(135deg, var(--maisEscuro), var(--escuro));
   color: var(--claro);
   font-family: inherit;
-  padding-top: 400px; /* espaço para navbar fixa */
+  padding-top: 250px; /* espaço para navbar fixa */
 }
 
 .navegacao {
