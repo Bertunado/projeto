@@ -44,8 +44,20 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
-  flex-wrap: wrap; /* caso fique apertado no mobile */
+  flex-wrap: wrap; /* importante para quebrar no mobile se faltar espaço */
 }
+.search-container {
+  width: 100%;
+}
+.search-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
 
 .menu {
   display: flex;
