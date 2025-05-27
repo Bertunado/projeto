@@ -44,10 +44,16 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
-  flex-wrap: wrap; /* importante para quebrar no mobile se faltar espaço */
+  flex-wrap: wrap; /* ✅ Mantém quebra no mobile */
+  /* Remova ou comente a linha abaixo */
+  /* flex-direction: column; */
 }
+
 .search-container {
-  width: 100%;
+  width: auto;
+}
+.search-li {
+  width: auto; /* ou remova width: 100%; */
 }
 .search-input {
   width: 100%;
