@@ -399,7 +399,6 @@ h1 {
 @media (max-width: 480px) {
   .menu {
     gap: 1rem;
-    flex-wrap: wrap;
   }
 
   .menu-link {
