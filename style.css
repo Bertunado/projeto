@@ -347,7 +347,16 @@ h1 {
 }
 
 /* Media Queries para mobile */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+  .Fot-logo {
+    width: 50px; /* menor no mobile */
+  }
+
+  .menu-link {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.5rem;
+  }
+
   .menu {
     gap: 1rem;
   }
