@@ -27,6 +27,9 @@ body {
 }
 
 .navegacao {
+  justify-content: space-between; /* ou 'flex-start' */
+  align-items: center;
+  flex-wrap: wrap; /* se quiser quebrar no mobile */
   position: fixed;
   top: 0;
   width: 100%;
@@ -44,9 +47,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
-  flex-wrap: wrap; /* ✅ Mantém quebra no mobile */
-  /* Remova ou comente a linha abaixo */
-  /* flex-direction: column; */
+  flex-direction: row;
 }
 
 .search-container {
