@@ -50,11 +50,9 @@ body {
 .menu {
   display: flex;
   list-style: none;
-  gap: 2rem;
   margin: 0;
   padding: 0;
-  align-items: center;
-  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .menu-link {
@@ -434,8 +432,6 @@ h1 {
   }
 
   .menu {
-    flex-direction: column;
-    width: 100%;
     gap: 1rem;
   }
 
@@ -450,5 +446,8 @@ h1 {
   .search-input {
     width: 100%;
     box-sizing: border-box;
+  }
+  .Fot-logo {
+    width: 80px;
   }
 }
