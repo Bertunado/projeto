@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
         { name: "Sares 1", link: "sares1_perfiladoras_fabrica2.html" },
         { name: "Sares 2", link: "sares2_perfiladoras_fabrica2.html" },
         { name: "Sares 3", link: "sares3_perfiladoraF3.html" },
-        { name: "Sares 4", link: "sares4_perfiladorasF3.html" }
+        { name: "Sares 4", link: "sares4_perfiladorasF3.html" },
+        { name: "Aida", link: "Aita_prensa_F3.html" }
     ];
 
     const searchInput = document.getElementById('searchInput');
