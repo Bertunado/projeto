@@ -29,7 +29,6 @@ body {
 .navegacao {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 0.5rem;
   position: fixed;
   top: 0;
@@ -39,19 +38,17 @@ body {
   padding: 1rem;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
-.search-li {
-  width: auto; /* ou remova width: 100%; */
-}
-.search-input {
+.topo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  box-sizing: border-box;
 }
 
-
+.Fot-logo {
+  width: 60px;
+  height: auto;
+}
 .menu {
   display: flex;
   gap: 1rem;
@@ -66,7 +63,21 @@ body {
   font-size: 0.9rem;
   font-weight: 500;
 }
+.search-container {
+  width: 100%;
+}
+.search-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
 
+.search-li {
+  width: auto; /* ou remova width: 100%; */
+}
 
 .cabecalho {
   padding: 4rem 2rem 4rem;
@@ -250,19 +261,10 @@ h1 {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-.Fot-logo {
-  width: 60px; 
-  height: auto;
-}
 .menuLogo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-}
-
-.search-container {
   width: 100%;
 }
 
@@ -382,30 +384,31 @@ h1 {
 }
 #suggestions {
   position: absolute;
-  top: 38px; /* altura do input + espaçamento */
+  top: 100%;
   left: 0;
   width: 100%;
-  background: #fff; /* fundo branco */
+  background: #fff;
   border: 1px solid #ccc;
   border-radius: 6px;
   max-height: 180px;
   overflow-y: auto;
   display: none;
   z-index: 9999;
-  color: #333; /* texto escuro para boa leitura */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* sombra leve para destaque */
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .suggestion-item {
   padding: 8px 12px;
   cursor: pointer;
-  color: #333; /* texto escuro */
+  color: #333;
 }
 
 .suggestion-item:hover {
-  background-color: #eee; /* seu hover claro */
-  color: #000; /* texto fica preto no hover */
+  background-color: #eee;
+  color: #000;
 }
+
 
   .menu {
     gap: 1rem;
