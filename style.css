@@ -28,9 +28,9 @@ body {
 
 .navegacao {
   display: flex;
-  flex-direction: column; /* empilha os elementos para mobile */
-  align-items: flex-start; 
-  gap: 0.5rem; 
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -38,19 +38,6 @@ body {
   z-index: 100;
   padding: 1rem;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-}
-
-.top-nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 2rem;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-.search-container {
-  width: 100%;
 }
 .search-li {
   width: auto; /* ou remova width: 100%; */
@@ -67,10 +54,10 @@ body {
 
 .menu {
   display: flex;
-  list-style: none;
   gap: 1rem;
-  margin: 0;
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .menu-link {
@@ -78,8 +65,8 @@ body {
   color: var(--claro);
   font-size: 0.9rem;
   font-weight: 500;
-  position: relative;
 }
+
 
 .cabecalho {
   padding: 4rem 2rem 4rem;
@@ -271,9 +258,12 @@ h1 {
 .menuLogo {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
+}
+
+.search-container {
+  width: 100%;
 }
 
 .rodape {
@@ -334,10 +324,6 @@ h1 {
 
 /* Media Queries para mobile */
 @media (max-width: 480px) {
-  .Fot-logo {
-    width: 50px; /* menor no mobile */
-  }
-
   .menu-link {
     font-size: 0.8rem;
     padding: 0.4rem 0.5rem;
@@ -345,59 +331,6 @@ h1 {
 
   .menu {
     gap: 1rem;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  .cabecalho-sub-titulo {
-    font-size: 1.2rem;
-  }
-
-  .cabecalho {
-    padding: 3rem 1rem 3rem;
-  }
-
-  .Foto-Perfil {
-    max-width: 250px;
-  }
-
-  .sobre {
-    padding: 3rem 1rem;
-  }
-
-  .sobre-titulo {
-    font-size: 2rem;
-    margin-bottom: 15px;
-  }
-
-  .sobre-paragrafo {
-    font-size: 1.1rem;
-  }
-
-  .projetos-caixa {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .projetos-titulo {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-  }
-
-  .imagem-card {
-    max-height: 150px;
-  }
-}
-
-@media (max-width: 480px) {
-  .menu {
-    gap: 1rem;
-  }
-
-  .menu-link {
-    font-size: 0.9rem;
   }
 
   h1 {
@@ -416,16 +349,27 @@ h1 {
     max-width: 180px;
   }
 
+  .sobre {
+    padding: 3rem 1rem;
+  }
+
   .sobre-titulo {
     font-size: 1.5rem;
+    margin-bottom: 15px;
   }
 
   .sobre-paragrafo {
     font-size: 1rem;
   }
 
+  .projetos-caixa {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
   .projetos-titulo {
     font-size: 1.5rem;
+    margin-bottom: 20px;
   }
 
   .imagem-card {
@@ -436,14 +380,6 @@ h1 {
 .search-li {
   position: relative;
 }
-
-.search-input {
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-}
-
 #suggestions {
   position: absolute;
   top: 38px; /* altura do input + espaçamento */
@@ -482,13 +418,4 @@ h1 {
   .search-li {
     width: 100%;
   }
-
-  .search-input {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .Fot-logo {
-  width: 60px; 
-  height: auto;
-}
 }
