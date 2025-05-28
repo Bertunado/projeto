@@ -27,8 +27,9 @@ body {
 }
 
 .navegacao {
-  display: flex;
-  flex-direction: column; /* para empilhar: logo+menu em cima, search abaixo */
+  justify-content: space-between; /* ou 'flex-start' */
+  align-items: center;
+  flex-wrap: wrap; /* se quiser quebrar no mobile */
   position: fixed;
   top: 0;
   width: 100%;
@@ -36,7 +37,8 @@ body {
   z-index: 100;
   padding: 1rem 2rem;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  gap: 0.5rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .top-nav {
@@ -49,7 +51,7 @@ body {
 }
 
 .search-container {
-  width: 100%;
+  width: auto;
 }
 .search-li {
   width: auto; /* ou remova width: 100%; */
@@ -60,6 +62,7 @@ body {
   border-radius: 4px;
   border: none;
   outline: none;
+  box-sizing: border-box;
 }
 
 
@@ -283,9 +286,9 @@ h1 {
 }
 
 .menuLogo {
-  display: flex;
-  align-items: center;
-  gap: 2rem; /* espaçamento entre logo e os links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .rodape {
