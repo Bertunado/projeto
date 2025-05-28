@@ -424,4 +424,15 @@ h1 {
   .search-li {
     width: 100%;
   }
+.codigo-peça {
+  font-size: 0.8rem; /* pequeno */
+  color: rgba(226, 232, 240, 0.7);
+  margin-bottom: 0.8rem; /* aumenta o espaço abaixo */
+}
+.valor-peça {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--secundaria);
+  margin-top: 0.8rem; /* espaço acima do valor */
+}
 }
