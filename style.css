@@ -425,7 +425,7 @@ h1 {
     width: 100%;
   }
 .codigo-peça {
-  font-size: 0.8rem; /* pequeno */
+  font-size: 0.8rem;
   color: rgba(226, 232, 240, 0.7);
   margin-bottom: 0.9rem; /* aumenta o espaço abaixo */
 }
